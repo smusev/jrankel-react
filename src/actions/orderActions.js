@@ -9,10 +9,11 @@ import {
     ORDER_DELETE_SUCCESS, 
     ORDER_DELETE_FAIL
 } from "./actionTypes";
+let apiUrl = process.env.REACT_APP_API_URL
 
 const createOrder = (order) => async (dispatch, getState) => {
     try {
-      await Axios.post("http://localhost:8000/api/orders", order)
+      await Axios.post(apiUrl + "/api/orders", order)
       .then(
         dispatch({ type: ORDER_CREATE_SUCCESS })
       ) 
@@ -25,7 +26,7 @@ const getOrders = () => async (dispatch) => {
   try {
     dispatch({ type: ORDER_LIST_REQUEST });
     console.log('order list dispatch');
-    const { data } = await Axios.get("http://localhost:8000/api/orders");
+    const { data } = await Axios.get(apiUrl + "/api/orders");
     console.log('order list api');
     dispatch({ type: ORDER_LIST_SUCCESS, payload: data });
     console.log('order list success with data');
@@ -38,7 +39,7 @@ const getOrders = () => async (dispatch) => {
 const removeOrder = (orderId) => async (dispatch) => {
   try{
     dispatch({type: ORDER_DELETE_REQUEST, payload: orderId})     
-    const { data } = await Axios.delete("http://localhost:8000/api/orders/" + orderId);
+    const { data } = await Axios.delete(apiUrl + "/api/orders/" + orderId);
     dispatch({ type: ORDER_DELETE_SUCCESS, payload: data })
   } catch(error){
     dispatch({type: ORDER_DELETE_FAIL, payload: error.message})

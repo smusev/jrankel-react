@@ -5,11 +5,12 @@ import {
   USER_SIGNUP_REQUEST, USER_SIGNUP_SUCCESS, USER_SIGNUP_FAIL, 
   //TODO USER_UPDATE_REQUEST, USER_UPDATE_SUCCESS, USER_UPDATE_FAIL
 } from "./actionTypes";
+let apiUrl = process.env.REACT_APP_API_URL
 
 const signin = (phone, password) => async (dispatch) => {
   dispatch({ type: USER_SIGNIN_REQUEST, payload: { phone, password } });
   try {
-    const { data } = await Axios.post("http://localhost:8000/user/signin", { phone, password });
+    const { data } = await Axios.post(apiUrl + "/user/signin", { phone, password });
     dispatch({ type: USER_SIGNIN_SUCCESS, payload: data });
     Cookie.set('userInfo', JSON.stringify(data));
   } catch (error) {
@@ -25,7 +26,7 @@ const logout = () => (dispatch) => {
 const signup = (name, phone, password) =>  async (dispatch) => {
   dispatch({type: USER_SIGNUP_REQUEST, payload: { name, phone, password }});
   try {
-    const { data } = await Axios.post("http://localhost:8000/user/signup", { name, phone, password });
+    const { data } = await Axios.post(apiUrl + "/user/signup", { name, phone, password });
     dispatch({ type: USER_SIGNUP_SUCCESS, payload: data });
     Cookie.set('userInfo', JSON.stringify(data));
   } catch (error) {

@@ -3,11 +3,11 @@ import {
   } from "./actionTypes";
 import axios from 'axios';
 import Cookie from "js-cookie";
-
+let apiUrl = process.env.REACT_APP_API_URL
 
 const addToCart = (productId, qty) => async (dispatch, getState) => {
   try {
-    const { data } = await axios.get("http://localhost:8000/api/dishes/" + productId);
+    const { data } = await axios.get(apiUrl + "/api/dishes/" + productId);
     dispatch({ 
         type: CART_ADD_ITEM,
         payload: {
