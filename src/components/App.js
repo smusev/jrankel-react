@@ -36,7 +36,7 @@ const App = () => {
     };
 
    return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <div className="ui list" style={Style}>
          <header className="header">
             <button className="menu-button" onClick={openMenu}>&#9776;</button>

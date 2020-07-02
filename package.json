@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jrankel-frontend.herokuapp.com/",
+  "homepage": "https://smusev.github.io/jrankel-react",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -25,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +49,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "webpack-cli": "^3.3.12"
   }
 }
