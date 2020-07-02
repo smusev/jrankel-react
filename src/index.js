@@ -25,7 +25,7 @@ import App from './components/App';
 import store from './store';
 import './style.css';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, document.getElementById('root'));
+const app = <Provider store={store}><App /></Provider>
+
+ReactDOM.render(app
+, document.getElementById('root'));
