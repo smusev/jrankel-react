@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
@@ -14,5 +14,6 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
-  }
+  },
+  devtool: 'cheap-module-eval-source-map'
 };

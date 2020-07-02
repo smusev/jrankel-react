@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
-    "start": "node --experimental-modules ./src/index.js"
+    "start": "node ./src/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
