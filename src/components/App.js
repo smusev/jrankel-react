@@ -50,19 +50,19 @@ const App = () => {
           </div>
           <div className="sidebar-menu-wrapper">
             <div className="sidebar-menu-item">
-               <Link to="/orders">Список заказов</Link>
+               <Link to="/orders" onClick={closeMenu}>Список заказов</Link>
             </div>
             <div className="sidebar-menu-item">
                <p>{userInfo ? userInfo.name : null}</p>
             </div>
             <div className="sidebar-menu-item">
-               {userInfo ? <button onClick={handleLogout}>Выйти</button> : null }
+               {userInfo ? <button onClick={() => {closeMenu(); handleLogout()}}>Выйти</button> : null }
             </div>
             <div className="sidebar-menu-item">
-               {!userInfo ? <Link to="/signin">Войти</Link> : null }
+               {!userInfo ? <Link to="/signin" onClick={closeMenu}>Войти</Link> : null }
             </div>
             <div className="sidebar-menu-item">
-               {!userInfo ? <Link to="/signup">Зарегистрироваться</Link> : null}
+               {!userInfo ? <Link to="/signup" onClick={closeMenu}>Зарегистрироваться</Link> : null}
             </div>
           </div>
          </aside>
