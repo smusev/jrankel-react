@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab2e2155026ab3dfc8bafb8888adee6e",
+    "revision": "5643d01675f2002d94de5c207b2824d8",
     "url": "/jrankel-react/index.html"
   },
   {
-    "revision": "200af190273f326b73c4",
+    "revision": "cff418f52b6de6ae1c70",
     "url": "/jrankel-react/static/css/main.df0e86c4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jrankel-react/static/js/2.c60e2855.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "200af190273f326b73c4",
-    "url": "/jrankel-react/static/js/main.2124c469.chunk.js"
+    "revision": "cff418f52b6de6ae1c70",
+    "url": "/jrankel-react/static/js/main.80fd6678.chunk.js"
   },
   {
     "revision": "55652b6efbe2acdfd872",
