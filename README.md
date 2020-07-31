@@ -1,5 +1,7 @@
 Here is live demo: https://smusev.github.io/jrankel-react/
 
+Admin login: +380501000000 password: 1
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
