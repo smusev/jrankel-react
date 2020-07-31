@@ -147,15 +147,22 @@ a:hover{
 }
 
 /* Product Page */
+.details{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .details-image{
+  padding: 20px 10px;
   float: left;
-  width: 48%;
+  width: 450px;
   clear: none;
 }
 
 .details-info{
+  padding: 30px;
   float: right;
-  width: 48%;
+  width: 450px;
   clear: none;
 }
 
@@ -206,7 +213,6 @@ a:hover{
   color: #000!important;
   padding: 10px 20px;
   height: 5rem;
-  width: 25%;
   margin: 0rem;
   letter-spacing: 0;
   font-size: 2rem;
