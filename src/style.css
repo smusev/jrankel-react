@@ -96,7 +96,8 @@ a:hover{
 /* main*/
 .category {
   height: 100%;
-  margin-top: auto;
+  margin: auto;
+  max-width: 980px;
 }
 
 .category-name{
@@ -110,12 +111,13 @@ a:hover{
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+  margin:auto;
+  padding: 0px;
 }
 .products li {  
   list-style-type: none;
   padding: 0;
   flex: 0 1 24rem;
-  margin: 1rem;
   height: 100%; 
 }
 .product{
@@ -451,7 +453,7 @@ a:hover{
 .sidebar{
   position: fixed;
   transition: all .5s;
-  transform: translateX(-30rem);
+  transform: translateX(-40rem);
   width: 30rem;
   background-color: lightyellow;
   border: .1rem #ff8000 solid;
