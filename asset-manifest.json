@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/jrankel-react/static/css/main.d07b6a6a.chunk.css",
-    "main.js": "/jrankel-react/static/js/main.f41fb623.chunk.js",
-    "main.js.map": "/jrankel-react/static/js/main.f41fb623.chunk.js.map",
+    "main.css": "/jrankel-react/static/css/main.0a9200c0.chunk.css",
+    "main.js": "/jrankel-react/static/js/main.0e43b5ed.chunk.js",
+    "main.js.map": "/jrankel-react/static/js/main.0e43b5ed.chunk.js.map",
     "runtime-main.js": "/jrankel-react/static/js/runtime-main.e0a290ed.js",
     "runtime-main.js.map": "/jrankel-react/static/js/runtime-main.e0a290ed.js.map",
     "static/js/2.c60e2855.chunk.js": "/jrankel-react/static/js/2.c60e2855.chunk.js",
     "static/js/2.c60e2855.chunk.js.map": "/jrankel-react/static/js/2.c60e2855.chunk.js.map",
     "index.html": "/jrankel-react/index.html",
-    "precache-manifest.3afa54839aac4c2575bea0638c8cb711.js": "/jrankel-react/precache-manifest.3afa54839aac4c2575bea0638c8cb711.js",
+    "precache-manifest.5146917800d378017624c58ef743d495.js": "/jrankel-react/precache-manifest.5146917800d378017624c58ef743d495.js",
     "service-worker.js": "/jrankel-react/service-worker.js",
-    "static/css/main.d07b6a6a.chunk.css.map": "/jrankel-react/static/css/main.d07b6a6a.chunk.css.map",
+    "static/css/main.0a9200c0.chunk.css.map": "/jrankel-react/static/css/main.0a9200c0.chunk.css.map",
     "static/js/2.c60e2855.chunk.js.LICENSE.txt": "/jrankel-react/static/js/2.c60e2855.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0a290ed.js",
     "static/js/2.c60e2855.chunk.js",
-    "static/css/main.d07b6a6a.chunk.css",
-    "static/js/main.f41fb623.chunk.js"
+    "static/css/main.0a9200c0.chunk.css",
+    "static/js/main.0e43b5ed.chunk.js"
   ]
 }
